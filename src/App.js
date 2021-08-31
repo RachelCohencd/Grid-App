@@ -2,14 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Grid from './Grid';
 
-const Trailer = ({ data }) => (
-  <a href={ data.url }
-     target="_blank"
-     rel="noopener noreferrer">
-    trailer...
-  </a>
-);
-
 const config = [
   {
     title: 'id',
@@ -23,11 +15,7 @@ const config = [
     title: 'rating',
     field: 'imdbRating',
   },
-//  {
-//    title: 'trailer',
-//    field: 'Trailer',
-//    component: Trailer
-//  }
+
 ];
 
 const App = ({ data }) => (
